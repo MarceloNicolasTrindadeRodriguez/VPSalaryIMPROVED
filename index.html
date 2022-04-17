@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--My STYLESHEET-->
+    <link rel="stylesheet" href="/styles.css" />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="/VPM - FR.jpg" />
+    <title>Calcul salaire Vieux-Port de Montreal</title>
+  </head>
+  <body>
+    <div class="img-container">
+      <img src="/VPM - FR.jpg" alt="photo vieux port de montreal" />
+    </div>
+    <h1 class="main-title">
+      Bienvenue! Ici vous pouvez estimer votre salaire selon vos heures de
+      travail au Vieux-Port de Montreal
+    </h1>
+    <div class="form-container">
+      <div class="col-1">
+        <label>Choisicez votre poste:</label>
+        <select name="post" id="poste">
+          <option value="Patrouilleur">Patrouilleur</option>
+          <option value="Superviseur">Superviseur</option>
+        </select>
+        <label>Entrer votre salaire par heure: $</label>
+        <input type="number" id="salaire" value="0" />
+
+        <label>Nombre d'heure regulier par semaine:</label>
+        <input type="number" id="heures-semaine-reg" value="0" />
+        <label>Nombre d'heure supplementaire par semaine:</label>
+        <input type="number" id="heures-semaine-sup" value="0" />
+        <button id="button" onclick="salaireSemaineBrut();">Calculer</button>
+      </div>
+      <div class="col-2">
+        <h1>Salaire au 2 semaines:</h1>
+        <h2 id="salaire-brut"></h2>
+        <h1>Salaire au mois:</h1>
+        <h1>Salaire a l'annee:</h1>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>
